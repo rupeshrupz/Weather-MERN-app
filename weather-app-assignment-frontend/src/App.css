@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.wave {
+  height: 90px;
+  width: 100%;
+  background: #6a30c8;
+  position: absolute;
+}
+
+/* .auth-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+} */
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: 1px solid gray;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+p {
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
+/* .container {
+  max-width: 1080px;
+  margin: 20px auto;
+} */
+
+.active {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.active:hover{
+  color:white
+}
+
+.active::after {
+  content: ">";
+  position: absolute;
+  top: 4px;
+  right: -1px;
+  height: 33px;
+  width: 33px;
+  background-color: white;
+  color: gray;
+  text-align: end;
+  font-size: larger;
+  clip-path: ellipse(57% 50% at 101% 47%);
+}
+
+.inactive {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.inactive:hover{
+  color:white
+}
