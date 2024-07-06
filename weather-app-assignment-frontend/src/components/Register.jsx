@@ -41,9 +41,12 @@ const Register = () => {
         formData
       );
       setMessage(response.data.message);
+      if(response.status == 200){
+        navigate("/login")
+      }
     } catch (error) {
       console.log(error);
-      setMessage(error.response.data.errors.email || "An error occurred");
+      setMessage(error.response.data.errors.email || error.response.data.errors.password || error.response.data.errors.name ||"An error occurred");
     }
   };
 
