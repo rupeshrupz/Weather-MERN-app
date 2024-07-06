@@ -43,7 +43,7 @@ const Login = () => {
         navigate("/home");
       }
     } catch (error) {
-      setMessage(error.response.data.errors.email || "An error occurred");
+      setMessage(error.response.data.errors.email || error.response.data.errors.password || "An error occurred");
     }
   };
 
